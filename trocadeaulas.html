@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Substituição</title>
+    <script src="https://kit.fontawesome.com/3c48893ee2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body class="bg-cover bg-center bg-no-repeat">
+    <div class="min-h-screen flex flex-col">
+        <!-- Navbar -->
+        <div class="navbar">
+            <img src="img/logo.png" alt="Logo" class="w-16 h-16">
+            <div class="flex space-x-4">
+                <a href="cadastro.html" class="font-semibold">Solicitar troca de aula</a>
+                <a href="solicitacoes.html" class="font-semibold">Checar horários de aula</a>
+                <a href="#" class="font-semibold"><i class="fa-solid fa-power-off w-4 h-4 ml-1" style="color: #ffffff;"
+                        alt="Sair"></i></a>
+            </div>
+        </div>
+
+        <div class="min-h-screen flex items-center justify-center">
+            <div class="p-10 rounded-lg shadow-xl md:w-4/5   bg-overlay">
+                <h1 class="form-title">Formulário de Substituição</h1>
+
+                <!-- Informações do Solicitante -->
+                <label for="solicitante" class="form-label">Solicitante:</label>
+                <input type="text" id="solicitante" name="solicitante" class="form-input" required>
+
+                <label for="disciplina" class="form-label">Disciplina:</label>
+                <select id="disciplina" name="disciplina" class="form-select" required>
+                    <option value="portugues">Artes</option>
+                    <option value="biologia">Biologia</option>
+                    <option value="biologia">Desenvolvimento de Sistemas</option>
+                    <option value="biologia">Educação Física</option>
+                    <option value="portugues">Filosofia</option>
+                    <option value="portugues">Fundamentos de Redes</option>
+                    <option value="portugues">Geografia</option>
+                    <option value="portugues">História</option>
+                    <option value="portugues">Interface Web</option>
+                    <option value="portugues">Introdução à Computação</option>
+                    <option value="portugues">Língua Espanhola</option>
+                    <option value="portugues">Língua Inglesa</option>
+                    <option value="portugues">Matemática</option>
+                    <option value="portugues">Português</option>
+                    <option value="portugues">Programação Web</option>
+                    <option value="portugues">Química</option>
+                    <option value="portugues">Sociologia</option>
+                </select>
+
+                <label for="turma" class="form-label">Turma:</label>
+                <select id="turma" name="turma" class="form-select" required>
+                    <option value="1_ano_administracao">1° ano - Administração</option>
+                    <option value="1_ano_agropecuaria">1° ano - Agropecuária</option>
+                    <option value="1_ano_enologia">1° ano - Enologia</option>
+                    <option value="1_ano_informatica">1° ano - Informática</option>
+                    <option value="1_ano_meio_ambiente">1° ano - Meio Ambiente</option>
+                    <option value="2_ano_administracao">2° ano - Administração</option>
+                    <option value="2_ano_agropecuaria">2° ano - Agropecuária</option>
+                    <option value="2_ano_enologia">2° ano - Enologia</option>
+                    <option value="2_ano_informatica">2° ano - Informática</option>
+                    <option value="2_ano_meio_ambiente">2° ano - Meio Ambiente</option>
+                    <option value="3_ano_administracao">3° ano - Administração</option>
+                    <option value="3_ano_agropecuaria">3° ano - Agropecuária</option>
+                    <option value="3_ano_enologia">3° ano - Enologia</option>
+                    <option value="3_ano_informatica">3° ano - Informática</option>
+                    <option value="3_ano_meio_ambiente">3° ano - Meio Ambiente</option>
+                </select>
+
+
+                <label for="data" class="form-label">Data:</label>
+                <input type="text" id="data" name="data" class="form-input" placeholder="dd/mm/aaaa" required>
+
+                <label for="horario" class="form-label">Horário:</label>
+                <input type="text" id="horario" name="horario" class="form-input" placeholder="hh:mm" required>
+
+                <label for="justificativa" class="form-label">Justificativa:</label>
+                <textarea id="justificativa" name="justificativa" class="form-textarea" required></textarea>
+
+                <!-- TIPO DE SUBSTITUIÇÃO PROGRAMADA -->
+                <h2 class="form-title mt-6">Tipo de Substituição Programada</h2>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- Opção 1: Troca de Aulas -->
+                    <div>
+                        <input type="checkbox" id="trocaAulas" name="tipoSubstituicao" value="trocaAulas"
+                            class="form-checkbox">
+                        <label for="trocaAulas" class="form-label">Troca de Aulas</label>
+
+                        <label for="profSubstituto" class="form-label">Professor(a) substituto(a):</label>
+                        <input type="text" id="profSubstituto" name="profSubstituto" class="form-input">
+
+                        <label for="dataTroca" class="form-label">Data:</label>
+                        <input type="text" id="dataTroca" name="dataTroca" class="form-input" placeholder="dd/mm/aaaa">
+
+                        <label for="disciplinaSubstituta" class="form-label">Disciplina substituta:</label>
+                        <select id="disciplinaSubstituta" name="disciplinaSubstituta" class="form-select">
+                            <option value="portugues">Artes</option>
+                            <option value="biologia">Biologia</option>
+                            <option value="biologia">Desenvolvimento de Sistemas</option>
+                            <option value="biologia">Educação Física</option>
+                            <option value="portugues">Filosofia</option>
+                            <option value="portugues">Fundamentos de Redes</option>
+                            <option value="portugues">Geografia</option>
+                            <option value="portugues">História</option>
+                            <option value="portugues">Interface Web</option>
+                            <option value="portugues">Introdução à Computação</option>
+                            <option value="portugues">Língua Espanhola</option>
+                            <option value="portugues">Língua Inglesa</option>
+                            <option value="portugues">Matemática</option>
+                            <option value="portugues">Português</option>
+                            <option value="portugues">Programação Web</option>
+                            <option value="portugues">Química</option>
+                            <option value="portugues">Sociologia</option>
+                        </select>
+                        <label for="dataDevolucao" class="form-label">Data da devolução:</label>
+                        <input type="text" id="dataDevolucao" name="dataDevolucao" class="form-input"
+                            placeholder="dd/mm/aaaa">
+
+                        <label for="horarioDevolucao" class="form-label">Horário:</label>
+                        <input type="text" id="horarioDevolucao" name="horarioDevolucao" class="form-input"
+                            placeholder="hh:mm">
+                    </div>
+
+                    <!-- Opção 2: Aplicação de Atividade -->
+                    <div>
+                        <input type="checkbox" id="atividade" name="tipoSubstituicao" value="atividade"
+                            class="form-checkbox">
+                        <label for="atividade" class="form-label">Aplicação de Atividade</label>
+
+                        <label for="profSubstitutoAtividade" class="form-label">Professor(a) substituto(a):</label>
+                        <input type="text" id="profSubstitutoAtividade" name="profSubstitutoAtividade"
+                            class="form-input">
+
+                        <label for="dataAtividade" class="form-label">Data:</label>
+                        <input type="text" id="dataAtividade" name="dataAtividade" class="form-input"
+                            placeholder="dd/mm/aaaa">
+                    </div>
+                </div>
+
+                <!-- Botão de Enviar -->
+                <button type="submit" class="form-submit">Enviar</button>
+            </div>
+        </div>
+
+</body>
+
+</html>

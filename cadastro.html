@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Professores</title>
+    <script src="https://kit.fontawesome.com/3c48893ee2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .bg-overlay {
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .navbar {
+            background-color: #2D3A3A; /* Verde escuro */
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: #EDEDED; /* Branco */
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #82B366; /* Verde mais claro ao passar o mouse */
+        }
+    </style>
+</head>
+<body class="bg-cover bg-center bg-no-repeat" style="background-image: url('caminho/para/sua/imagem.jpg');">
+
+<div class="min-h-screen flex flex-col">
+    <!-- Navbar -->
+    <div class="navbar">
+        <img src="img/logo.png" alt="Logo" class="w-16 h-16">
+        <div class="flex space-x-4">
+            <a href="cadastro.html" class="font-semibold">Cadastro de Professores</a>
+            <a href="solicitacoes.html" class="font-semibold">Solicitações de Substituição</a>
+            <a href="#" class="font-semibold"><i class="fa-solid fa-power-off w-4 h-4 ml-1" style="color: #ffffff;" alt="Sair"></i></a>
+        </div>
+    </div>
+
+    <div class="flex-grow flex items-center justify-center">
+        <div class="p-10 rounded-lg shadow-xl md:w-5/5 w-full bg-overlay">
+            <h1 class="text-3xl font-semibold mb-6 text-gray-800">Cadastro de Professores</h1>
+            <form>
+                <div class="mb-6">
+                    <label for="nome" class="block text-gray-800 text-sm font-semibold mb-2">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" class="border p-3 w-full rounded-md focus:outline-none focus:border-gray-700 bg-white text-gray-800 placeholder-gray-500::placeholder">
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-gray-800 text-sm font-semibold mb-2">Email:</label>
+                    <input type="email" id="email" name="email" class="border p-3 w-full rounded-md focus:outline-none focus:border-gray-700 bg-white text-gray-800 placeholder-gray-500::placeholder">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-gray-800 text-sm font-semibold mb-2">Disciplina:</label>
+                    <div class="grid grid-cols-3 gap-4">
+                    <!-- Lista de disciplinas em ordem alfabética -->
+                    <div class="flex items-center">
+                        <input type="checkbox" id="artes" name="disciplina" value="Artes" class="mr-2">
+                        <label for="artes">Artes</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="biologia" name="disciplina" value="Biologia" class="mr-2">
+                        <label for="biologia">Biologia</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="desenvolvimento_de_sistemas" name="disciplina" value="Desenvolvimento de Sistemas" class="mr-2">
+                        <label for="desenvolvimento_de_sistemas">Desenvolvimento de Sistemas</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="educacao_fisica" name="disciplina" value="Educação Física" class="mr-2">
+                        <label for="educacao_fisica">Educação Física</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="filosofia" name="disciplina" value="Filosofia" class="mr-2">
+                        <label for="filosofia">Filosofia</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="fisica" name="disciplina" value="Física" class="mr-2">
+                        <label for="fisica">Física</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="fundamentos_de_redes" name="disciplina" value="Fundamentos de Redes" class="mr-2">
+                        <label for="fundamentos_de_redes">Fundamentos de Redes</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="geografia" name="disciplina" value="Geografia" class="mr-2">
+                        <label for="geografia">Geografia</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="historia" name="disciplina" value="História" class="mr-2">
+                        <label for="historia">História</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="interface_web" name="disciplina" value="Interface Web" class="mr-2">
+                        <label for="interface_web">Interface Web</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="introducao_a_computacao" name="disciplina" value="Introdução à Computação" class="mr-2">
+                        <label for="introducao_a_computacao">Introdução à Computação</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="lingua_espanhola" name="disciplina" value="Língua Espanhola" class="mr-2">
+                        <label for="lingua_espanhola">Língua Espanhola</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="lingua_inglesa" name="disciplina" value="Língua Inglesa" class="mr-2">
+                        <label for="lingua_inglesa">Língua Inglesa</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="matematica" name="disciplina" value="Matemática" class="mr-2">
+                        <label for="matematica">Matemática</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="portugues" name="disciplina" value="Português" class="mr-2">
+                        <label for="portugues">Português</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="programacao_web" name="disciplina" value="Programação Web" class="mr-2">
+                        <label for="programacao_web">Programação Web</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="quimica" name="disciplina" value="Química" class="mr-2">
+                        <label for="quimica">Química</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="sociologia" name="disciplina" value="Sociologia" class="mr-2">
+                        <label for="sociologia">Sociologia</label>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-800 text-sm font-semibold mb-2">Tipo de Curso:</label>
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- Opções de tipo de curso -->
+                    <div class="flex items-center">
+                        <input type="checkbox" id="tecnico" name="tipo_curso" value="Técnico" class="mr-2">
+                        <label for="tecnico">Curso Técnico</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="superior" name="tipo_curso" value="Superior" class="mr-2">
+                        <label for="superior">Curso Superior</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="pos_graduacao" name="tipo_curso" value="Pós-graduação" class="mr-2">
+                        <label for="pos_graduacao">Pós-graduação</label>
+                    </div>
+                    <!-- Adicione outras opções de tipo de curso, se necessário -->
+                </div>
+            </div>
+            <div class="mb-6">
+                <label for="imagem" class="block text-gray-800 text-sm font-semibold mb-2">Imagem do Professor:</label>
+                <input type="file" id="imagem" name="imagem" accept="image/*" class="border p-3 w-full rounded-md focus:outline-none focus:border-gray-700 bg-white text-gray-800">
+            </div>
+            <button type="submit" class="bg-gray-800 text-white px-5 py-2 rounded-md hover:bg-gray-900 focus:outline-none focus:shadow-outline-gray">
+                Cadastrar Professor
+            </button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
