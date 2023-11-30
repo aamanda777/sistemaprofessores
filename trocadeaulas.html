@@ -11,17 +11,26 @@
 </head>
 
 <body class="bg-cover bg-center bg-no-repeat">
-    <div class="min-h-screen flex flex-col">
-        <!-- Navbar -->
-        <div class="navbar">
-            <img src="img/logo.png" alt="Logo" class="w-16 h-16">
-            <div class="flex space-x-4">
-                <a href="cadastro.html" class="font-semibold">Solicitar troca de aula</a>
-                <a href="solicitacoes.html" class="font-semibold">Checar horários de aula</a>
-                <a href="#" class="font-semibold"><i class="fa-solid fa-power-off w-4 h-4 ml-1" style="color: #ffffff;"
-                        alt="Sair"></i></a>
-            </div>
+  
+    <div class="navbar bg-blue-500 p-2 lg:p-4">
+        <img src="img/logo.png" alt="Logo" class="w-12 h-12 lg:w-16 lg:h-16">
+        <div class="hidden lg:flex space-x-4">
+            <a href="trocadeaulas.html" class="font-semibold">Solicitar troca de aula</a>
+            <a href="solicitacoes.html" class="font-semibold">Checar horários de aula</a>
+            <a href="solicitacoes.html" class="font-semibold">Registrar aulas</a>
+            <a href="solicitacoes.html" class="font-semibold">Disponibilizar material</a>
+            <a href="solicitacoes.html" class="font-semibold">Resultados de solicitações</a>
+            <a href="solicitacoes.html" class="font-semibold">Solicitar documentos</a>
+            <a href="#" class="font-semibold"><i class="fas fa-power-off w-4 h-4 lg:w-6 lg:h-6 ml-1"
+                    style="color: #ffffff;" alt="Sair"></i></a>
         </div>
+        <!-- Adiciona um ícone para abrir o menu em telas pequenas -->
+        <div class="lg:hidden">
+            <button id="menuBtn" class="text-white">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
 
         <div class="min-h-screen flex items-center justify-center">
             <div class="p-10 rounded-lg shadow-xl md:w-4/5   bg-overlay">

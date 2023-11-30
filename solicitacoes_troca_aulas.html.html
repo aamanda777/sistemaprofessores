@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitações de Troca de Aulas</title>
+    <!-- Link para o CDN do Tailwind CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+    <script src="https://kit.fontawesome.com/3c48893ee2.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar {
+            background-color: #2D3A3A;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: #EDEDED;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #82B366;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+<div class="navbar bg-blue-500 p-2 lg:p-4">
+    <img src="img/logo.png" alt="Logo" class="w-12 h-12 lg:w-16 lg:h-16">
+    <div class="hidden lg:flex space-x-4">
+        <a href="registrar_professor.html" class="font-semibold">
+            <div class="flex flex-col items-center">
+                <p>Registrar Professor</p>
+            </div>
+        </a>
+        <a href="solicitacoes_troca_aulas.html" class="font-semibold">
+            <div class="flex flex-col items-center">
+                <p>Solicitações de troca de aulas</p>
+            </div>
+        </a>
+        <a href="checar_agenda.html" class="font-semibold">
+            <div class="flex flex-col items-center">
+                <p>Checar agenda</p>
+            </div>
+        </a>
+        <a href="caixa_mensagens.html" class="font-semibold">
+            <div class="flex flex-col items-center">
+                <p>Caixa de mensagens</p>
+            </div>
+        </a>
+        <a href="solicitar_documento.html" class="font-semibold">
+            <div class="flex flex-col items-center">
+                <p>Solicitar documento</p>
+            </div>
+        </a>
+        <a href="calendario_academico.html" class="font-semibold">
+            <div class="flex flex-col items-center">
+                <p>Calendário acadêmico</p>
+            </div>
+        </a>
+        <a href="registrar_professor.html" class="font-semibold">
+            <div class="flex flex-col items-center">
+                <p>Registrar Professor</p>
+            </div>
+        </a>
+        <a href="#" class="font-semibold"><i class="fas fa-power-off w-4 h-4 lg:w-6 lg:h-6 ml-1"
+                style="color: #ffffff;" alt="Sair"></i></a>
+    </div>
+</div>
+
+<div class="flex items-center justify-center min-h-screen">
+    <div class="text-center max-w-screen-lg">
+        <h1 class="text-4xl lg:text-4xl font-semibold mb-8">Solicitações de Troca de Aulas</h1>
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+            <!-- Simulação 1 -->
+            <div class="bg-white p-6 rounded-md shadow-md">
+                <p class="text-xl font-semibold mb-4">Solicitação feita por [Nome 1]</p>
+                <button class="bg-green-500 text-white px-6 py-3 rounded-md"><a href="solicitacao_detalhes.html"
+                        class="font-semibold">Visualizar</a></button>
+            </div>
+            <!-- Simulação 2 -->
+            <div class="bg-white p-6 rounded-md shadow-md">
+                <p class="text-xl font-semibold mb-4">Solicitação feita por [Nome 2]</p>
+                <button class="bg-green-500 text-white px-6 py-3 rounded-md"><a href="solicitacao_detalhes.html"
+                        class="font-semibold">Visualizar</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

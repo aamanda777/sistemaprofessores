@@ -3,50 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Professores</title>
+    <title>Registro de Professores</title>
     <script src="https://kit.fontawesome.com/3c48893ee2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <link rel="stylesheet" href="css/estilo.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
 
-        .bg-overlay {
-            background: rgba(255, 255, 255, 0.8);
-        }
-
-        .navbar {
-            background-color: #2D3A3A; /* Verde escuro */
-            padding: 1rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .navbar a {
-            color: #EDEDED; /* Branco */
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            transition: color 0.3s ease;
-        }
-
-        .navbar a:hover {
-            color: #82B366; /* Verde mais claro ao passar o mouse */
-        }
-    </style>
 </head>
 <body class="bg-cover bg-center bg-no-repeat" style="background-image: url('caminho/para/sua/imagem.jpg');">
 
-<div class="min-h-screen flex flex-col">
-    <!-- Navbar -->
-    <div class="navbar">
-        <img src="img/logo.png" alt="Logo" class="w-16 h-16">
-        <div class="flex space-x-4">
-            <a href="cadastro.html" class="font-semibold">Cadastro de Professores</a>
-            <a href="solicitacoes.html" class="font-semibold">Solicitações de Substituição</a>
-            <a href="#" class="font-semibold"><i class="fa-solid fa-power-off w-4 h-4 ml-1" style="color: #ffffff;" alt="Sair"></i></a>
+    <div class="navbar bg-blue-500 p-2 lg:p-4">
+        <img src="img/logo.png" alt="Logo" class="w-12 h-12 lg:w-16 lg:h-16">
+        <div class="hidden lg:flex space-x-4">
+            <a href="registrar_professor.html" class="font-semibold">
+                <div class="flex flex-col items-center">
+                    <p>Registrar Professor</p>
+                </div>
+            </a>
+            <a href="solicitacoes_troca_aulas.html" class="font-semibold">
+                <div class="flex flex-col items-center">
+                    <p>Solicitações de troca de aulas</p>
+                </div>
+            </a>
+            <a href="checar_agenda.html" class="font-semibold">
+                <div class="flex flex-col items-center">
+                    <p>Checar agenda</p>
+                </div>
+            </a>
+            <a href="caixa_mensagens.html" class="font-semibold">
+                <div class="flex flex-col items-center">
+                    <p>Caixa de mensagens</p>
+                </div>
+            </a>
+            <a href="solicitar_documento.html" class="font-semibold">
+                <div class="flex flex-col items-center">
+                    <p>Solicitar documento</p>
+                </div>
+            </a>
+            <a href="calendario_academico.html" class="font-semibold">
+                <div class="flex flex-col items-center">
+                    <p>Calendário acadêmico</p>
+                </div>
+            </a>
+            <a href="registrar_professor.html" class="font-semibold">
+                <div class="flex flex-col items-center">
+                    <p>Registrar Professor</p>
+                </div>
+            </a>
+            <a href="#" class="font-semibold"><i class="fas fa-power-off w-4 h-4 lg:w-6 lg:h-6 ml-1"
+                    style="color: #ffffff;" alt="Sair"></i></a>
+        </div>
+        <!-- Adiciona um ícone para abrir o menu em telas pequenas -->
+        <div class="lg:hidden">
+            <button id="menuBtn" class="text-white">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </div>
 
@@ -170,5 +180,6 @@
     </div>
 </div>
 
+<script src="js/script.js"></script>
 </body>
 </html>

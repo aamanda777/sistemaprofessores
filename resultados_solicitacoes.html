@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de Solicitações</title>
+    <!-- Link para o CDN do Tailwind CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://kit.fontawesome.com/3c48893ee2.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-100">
+
+    <div class="navbar bg-blue-500 p-2 lg:p-4">
+        <img src="img/logo.png" alt="Logo" class="w-12 h-12 lg:w-16 lg:h-16">
+        <div class="hidden lg:flex space-x-4">
+            <a href="trocadeaulas.html" class="font-semibold">Solicitar troca de aula</a>
+            <a href="solicitacoes.html" class="font-semibold">Checar horários de aula</a>
+            <a href="solicitacoes.html" class="font-semibold">Registrar aulas</a>
+            <a href="solicitacoes.html" class="font-semibold">Disponibilizar material</a>
+            <a href="resultados_solicitacoes.html" class="font-semibold">Resultados de solicitações</a>
+            <a href="solicitacoes.html" class="font-semibold">Solicitar documentos</a>
+            <a href="#" class="font-semibold"><i class="fas fa-power-off w-4 h-4 lg:w-6 lg:h-6 ml-1"
+                    style="color: #ffffff;" alt="Sair"></i></a>
+        </div>
+        <!-- Adiciona um ícone para abrir o menu em telas pequenas -->
+        <div class="lg:hidden">
+            <button id="menuBtn" class="text-white">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+<div class="flex items-center justify-center min-h-screen">
+    <div class="text-center max-w-screen-lg">
+        <h1 class="text-4xl lg:text-5xl font-semibold mb-8">Suas Solicitações</h1>
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+            <!-- Resultado 1 -->
+            <div class="bg-white p-6 rounded-md shadow-md">
+                <p class="text-xl mb-2">Data: 01/12/2024</p>
+                <p class="text-xl  mb-2">Horário: 16:00</p>
+                <p class="text-xl  mb-2">Professor(a) substituto(a): Pedro Neves</p>
+                <p class="text-xl  mb-2">Disciplina substituta: Biologia</p>
+                <p class="text-xl mb-2">Tipo de Substituição Programada: Troca de Aulas</p>
+                <p class="text-xl mb-2 ">Status: Autorizado <i class="fa-solid fa-check" style="color: #30b300;"></i></p>
+            </div>
+            <!-- Resultado 2 -->
+            <div class="bg-white p-6 rounded-md shadow-md">
+                <p class="text-xl  mb-2">Data: 02/12/2024</p>
+                <p class="text-xl  mb-2">Horário: 14:30</p>
+                <p class="text-xl  mb-2">Professor(a) substituto(a): Maria Oliveira</p>
+                <p class="text-xl mb-2">Disciplina substituta: História</p>
+                <p class="text-xl -2">Tipo de Substituição Programada: Troca de Aulas</p>
+                <p class="text-xl mb-2">Status: Pendente <i class="fa-regular fa-clock" style="color: #0011ff;"></i></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
